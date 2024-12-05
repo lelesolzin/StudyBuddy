@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyBuddy - Contato</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f3f0fc;
+      color: #fff;
+    }
+    header, footer {
+      background-color: #6a0dad;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    nav {
+      background-color: #5a0097;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 15px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e1ccec;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+      color: #5a0097;
+    }
+    form {
+      background-color: #6a0dad;
+      padding: 30px;
+      border-radius: 10px;
+      color: #fff;
+      max-width: 500px;
+      margin: 30px auto; /* Centraliza o formulário */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+      display: flex;
+      flex-direction: column; /* Empilha os elementos */
+      align-items: center; /* Centraliza horizontalmente */
+    }
+    form label {
+      align-self: flex-start; /* Alinha os rótulos à esquerda */
+      margin-bottom: 5px;
+    }
+    form input, form textarea {
+      width: 100%; /* Garante que os campos ocupem toda a largura disponível */
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f3f0fc;
+      color: #5a0097;
+      font-size: 1rem;
+      box-sizing: border-box; /* Garante que padding e largura funcionem juntos */
+    }
+    form textarea {
+      resize: none; /* Remove o redimensionamento da caixa de texto */
+    }
+    form button {
+      width: 100%;
+      background-color: #5a0097;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #4a0075;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Entre em Contato</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="ferramentas.html">Ferramentas</a>
+    <a href="dicas.html">Dicas de Estudo</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <h2>Fale conosco</h2>
+    <p>Preencha o formulário abaixo para entrar em contato conosco. Responderemos o mais breve possível!</p>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2024 StudyBuddy. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
